@@ -95,7 +95,7 @@ module tb_mips_32;
            #100;  
            reset = 0;  
            // store some data in data memory
-           /*
+           
            uut.datapath_unit.data_mem.ram[0]= 32'b00000000000000000000000000000101;// 00000005
            uut.datapath_unit.data_mem.ram[1]= 32'b00001111110111110110111010010001;// 0fdf6e91 
            uut.datapath_unit.data_mem.ram[2]= 32'b01101010001100010100001110011011;// 6a31439b 
@@ -171,18 +171,6 @@ module tb_mips_32;
           
           
          $display("points : ", points);
-         */ 
-         
-           uut.datapath_unit.data_mem.ram[0]= 32'b00000000000000000000000000000101;// 00000005
-           uut.datapath_unit.data_mem.ram[1]= 32'b00001111110111110110111010010001;// 0fdf6e91 
-           uut.datapath_unit.data_mem.ram[2]= 32'b01101010001100010100001110011011;// 6a31439b 
-           uut.datapath_unit.data_mem.ram[3]= 32'b01010110001101000011111111111101;// 56343ffd 
-           uut.datapath_unit.data_mem.ram[4]= 32'b01000010100111101110110111011011;// 429eeddb 
-           uut.datapath_unit.data_mem.ram[5]= 32'b10010000000000000000000000000000;// 90000000 
-           uut.datapath_unit.data_mem.ram[6]= 32'b10010001001101001111110101110101;// 9134fd75
-           uut.datapath_unit.data_mem.ram[7]= 32'b10111100110100010001001001000111;// bcd11247
-           uut.datapath_unit.data_mem.ram[8]= 32'b10110101010110111101100000110001;// b55bd831
-           uut.datapath_unit.data_mem.ram[9]= 32'b11010001100011111010011000000000;// d18fa600
       end  
 endmodule
 
